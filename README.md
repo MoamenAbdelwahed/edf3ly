@@ -31,7 +31,7 @@ Write a program that can price a cart of products, accept multiple products, com
 - run the project
 `php -S localhost:8001 -t public`
 
-# test
+# Test
 You can hit a post request to 'http://localhost:8001/api/v1/cart'
 with json body includes "productIds" array and optional "currency" string like "EGP"
 
