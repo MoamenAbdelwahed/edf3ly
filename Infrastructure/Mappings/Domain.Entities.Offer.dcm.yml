@@ -1,0 +1,33 @@
+Domain\Entities\Offer:
+  type: entity
+  table: offers
+  id:
+    id:
+      type: integer
+      nullable: false
+      options:
+        unsigned: true
+      id: true
+      generator:
+        strategy: IDENTITY
+  fields:
+    isDiscount:
+      type: integer
+      nullable: false
+      options:
+        default: 0
+    percentage:
+      type: integer
+      nullable: true
+      options:
+        fixed: false
+    buyCount:
+      type: integer
+      nullable: true
+      options:
+        fixed: false
+    getCount:
+      type: integer
+      nullable: true
+      options:
+        fixed: false

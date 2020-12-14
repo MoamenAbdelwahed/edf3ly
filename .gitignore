@@ -1,0 +1,25 @@
+# phpstorm project files
+.idea/
+vendor
+Application/Src/storage/framework/*
+!Application/Src/storage/framework/.gitkeep
+
+Application/Src/storage/logs/*
+!Application/Src/storage/logs/.gitkeep
+
+Application/Src/storage/proxies/*
+!Application/Src/storage/proxies/.gitkeep
+
+Application/Src/storage/schedule/*
+!Application/Src/storage/schedule/.gitkeep
+
+Application/Src/storage/schedule/laravels.json
+
+Application/Src/.env
+composer.lock
+
+deploy.sh
+/deploy.sh
+
+
+#chown -hR nginx:nginx cache for cache folder
