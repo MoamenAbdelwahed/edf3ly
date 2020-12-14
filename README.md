@@ -13,7 +13,7 @@ Write a program that can price a cart of products, accept multiple products, com
 - Value object
 - etc...
 
-# tools
+# Tools
 - Lumen
 - Doctrine ORM with yml mapping
 - MySQL database
