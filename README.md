@@ -1,41 +1,43 @@
-That is a base project DDD With Doctrine Service Lumen 5.3 and Doctrine.
- 
-A Microservice for register Petshop companies, managers and customers.
-- The Companies are registred if their CNPJ belongs to the interest range.
-- If a company is approved the service stores it's localization coordinates and sends a welcome email.
-- All the login proccess relies uppon JWT Tokens.
+# Problem
 
-After Cloning the project 
+Write a program that can price a cart of products, accept multiple products, combine offers, and display a total detailed bill in different currencies (based on user selection).
 
-# Installing Composer Components 
+# Architecture
+- Domain Driven Desing
+- Service Oriented Architecure
 
-`cd dev-api `
+# Design patterns used
+- Repository
+- Helper
+- Service Provider
+- Value object
+- etc...
 
+# tools
+- Lumen
+- Doctrine ORM with yml mapping
+- MySQL database
+
+# Setup 
+- create your .env file
+
+- install dependencies
 `composer install `
 
-
-
-# Setup Database and seed data 
-
-(Create Database Locally Name it on .env File)
-
+- create database tables
 `cd Application/Src`
-
 `php artisan doctrine:schema:update --force`
 
-`php artisan db:seed --class=DatabaseSeeder`
-
-
-
-# Running the project 
-
-`cd Application/Src`
-
-
+- run the project
 `php -S localhost:8001 -t public`
 
+# test
+You can hit a post request to 'http://localhost:8001/api/v1/cart'
+with json body includes "productIds" array and optional "currency" string like "EGP"
 
-# project Infrastructure 
-
-Working On it !
-
+# To do list
+- enhance offers module to accep more types of offers
+- unit testing
+- seeds
+- save users carts
+- better response details when user request the cart price
